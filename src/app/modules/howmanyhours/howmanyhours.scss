@@ -1,36 +1,25 @@
 @import "defaults";
 
-.m-branding {
+.m-howmanyhours {
   .m-marketing--header {
+    padding: 0; 
     background: #FFF;
   }
   .m-marketing--header-inner {
     text-align: center;
-
+    padding-bottom: 0 !important;
     h1 {
       color: #444;
     }
     h3 {
-      color: #666;
+      color: #666; 
       padding-right: 0;
     }
   }
-
-  .m-marketing--contents {
-    text-align: center;
-    img {
-      max-height: 156px;
-      @media only screen and (max-width: 460px) {
-        max-width: 332px;
-      }
-    }
-    label {
-      display: block;
-      font-weight: 600;
-      text-transform: uppercase;
-      color: #666;
-      margin: 56px 0;
-    }
+  .heart-svg {
+    height: auto;
+    display: block;
+    margin: auto;
+    width: 33%;
   }
-
 }

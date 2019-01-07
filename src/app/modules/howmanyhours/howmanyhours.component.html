@@ -1,14 +1,14 @@
-<div class="m-marketing m-branding">
-
+<div class="m-marketing m-howmanyhours">
+  <!--rename classes needed along with adjustment--> 
   <div class="m-marketing--header">
 
     <div class="m-marketing--header-inner">
-      <h1 i18n="@@HOWMANYHOURS__TITLE">You've been with us for: {{ Math.floor(this.seconds / 60) }} hours! </h1>
+      <h1 i18n="@@HOWMANYHOURS__TITLE">You've been with us for {{ hours }} hours! </h1>
     </div>
-  </div>
+  </div> 
 <!-- <?xml version="1.0" encoding="UTF-8"?> -->
-  <div class="m-layout--cell">
-    <img [src]="minds.cdn_assets_url + 'assets/logos/heart.svg'" download/>
+  <div class="">
+    <img [src]="minds.cdn_assets_url + 'assets/icons/heart.svg'" class="heart-svg"/>
     <!-- <label i18n="@@BRANDING__FULL_LOGO_LABEL">With Love</label> -->
   </div>
   <!-- SVG throws errors trying to read svg attributes and angular attributes , need to get the solution for this. Content is a heart, needs to be faded -->
