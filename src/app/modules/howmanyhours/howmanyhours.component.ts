@@ -29,13 +29,15 @@ export class HowManyHoursComponent {
     // }
     this.user = await this.session.getLoggedInUser(); //Get the current user.
     this.seconds = await this.findDifference(this.user.account_time_created, + new Date()); //unary operator used to invoke Date's 'valueOf' function.
-    
+    console.log(this.user.account_time_created)
+    console.log(+ new Date)
+
     // this.seconds = await this.client.get('api/v2/howmanyhours')
     
     // this.seconds = response;
     //         })
     //         .catch(e => {
-    //           console.error('[Minds Admin] Cannot load statistics', e);
+    //           console.error('[Minds Admin] Cannot get account age.', e);
     //         });
     //console.log(this.account_time_created);
     console.log(this.seconds)
@@ -48,8 +50,4 @@ export class HowManyHoursComponent {
     console.log(a,b)
     return (a > b) ? a - b : b - a;
   }
-
-  // (){
-
-  // }
 }
